@@ -1,0 +1,19 @@
+name: 'Example of Custom Action'
+description: 'Get weather by input city'
+inputs:
+  open_weather_key:
+    description: 'Open Weather API Key'
+    required: true
+  input_city:
+    description: 'City Name'
+    required: true
+    default: 'Paris'
+outputs:
+  weather:
+    description: 'Whether'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.input_city }}
+    - ${{ inputs.open_weather_key }}
