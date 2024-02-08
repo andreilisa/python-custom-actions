@@ -16,4 +16,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.input_city }}
-    - ${{ inputs.open_weather_key }}
+    - ${{ inputs.input_open_weather_key }}
