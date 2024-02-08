@@ -1,7 +1,7 @@
 import requests
 import os
 
-api_key = os.environ["OPEN_WEATHER_KEY"]
+api_key = os.environ["INPUT_OPEN_WEATHER_KEY"]
 
 city = os.environ["INPUT_CITY"]
 
