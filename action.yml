@@ -4,7 +4,7 @@ inputs:
   open_weather_key:
     description: 'Open Weather API Key'
     required: true
-  input_city:
+  city_name:
     description: 'City Name'
     required: true
     default: 'Paris'
@@ -15,5 +15,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.input_city }}
+    - ${{ inputs.input_city_name }}
     - ${{ inputs.input_open_weather_key }}
