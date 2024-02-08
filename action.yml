@@ -6,7 +6,7 @@ inputs:
     required: true
   city_name:
     description: 'City Name'
-    required: true
+    required: false
     default: 'Paris'
 outputs:
   weather:

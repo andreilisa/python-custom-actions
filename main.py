@@ -6,7 +6,6 @@ api_key = os.environ["INPUT_OPEN_WEATHER_KEY"]
 city = os.environ["INPUT_CITY_NAME"]
 
 url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
-print(api_key)
 response = requests.get(url)
 
 if response.status_code == 200:
