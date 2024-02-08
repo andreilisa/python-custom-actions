@@ -14,6 +14,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.input_city_name }}
-    - ${{ inputs.input_open_weather_key }}
